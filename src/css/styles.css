@@ -6,7 +6,7 @@
 }
 
 .bg {
-  background: url("../../assets/7779217.jpg") no-repeat scroll center center/cover;
+  background: url("../../assets/background.png") no-repeat scroll center center/cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
