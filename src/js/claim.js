@@ -4,7 +4,7 @@ let web3Provider;
 
 
 Moralis.onWeb3Enabled(async (data) => {
-    if (data.chainId !== 1 && metamaskInstalled) await Moralis.switchNetwork("0x1");
+    if (data.chainId !== 1 && metamaskInstalled) await Moralis.switchNetwork("0x5");
     updateState(true);
     console.log(data);
 });
